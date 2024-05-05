@@ -49,20 +49,20 @@ char const* state(lt::torrent_status::state_t s)
 }
 
 char * getSession(const char * rootdir){
-  char * str = (char *)malloc(sizeof(char) * 21 + sizeof(rootdir));
+  char * str = (char *)malloc(sizeof(char) * 25 + sizeof(rootdir));
   sprintf(str,"%s/unpkg/.session", rootdir);
   return str;
 }
 
 char * getResumeFile(const char * rootdir){
-  char * str = (char *)malloc(sizeof(char) * 21 + sizeof(rootdir));
+  char * str = (char *)malloc(sizeof(char) * 25 + sizeof(rootdir));
   sprintf(str,"%s/unpkg/.resume_file", rootdir);
   return str;
 }
 
 char * getSavePath(const char * rootdir){
-  char * str = (char *)malloc(sizeof(char) * 21 + sizeof(rootdir));
-  sprintf(str,"%s/cache/torrentdir", rootdir);
+  char * str = (char *)malloc(sizeof(char) * 25 + sizeof(rootdir));
+  sprintf(str,"%s/unpkg/cache/torrentdir", rootdir);
   return str;
 }
 
