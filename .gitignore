@@ -31,3 +31,7 @@
 *.out
 *.app
 unpkg-torrent
+unpkg-mktorrent
+unpkg-seed
+
+*.torrent
